@@ -1,7 +1,7 @@
 {
-  "name": "my-node-server",
+  "name": "Response Server",
   "version": "1.0.0",
-  "description": "A basic Node.js server",
+  "description": "NodeJS Response Server",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
