@@ -10,7 +10,7 @@ app.get('/', async (req, res) => {
     const response = await axios.get(TARGET_URL);
     res.send(response.data);
   } catch (error) {
-    res.status(500).send('Failed to fetch external HTML.');
+    res.status(500).send(`Failed to fetch external HTML: ${error}`);
   }
 });
 
