@@ -17,7 +17,7 @@ app.get('/', async (req, res) => {
     res.send(response.data);
   } catch (error) {
     console.error(error.message);
-    res.status(500).send('Failed to fetch external HTML.');
+    res.status(500).send(`Failed to fetch external HTML: ${error}`);
   }
 });
 
